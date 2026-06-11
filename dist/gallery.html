@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lumina Dental | Real Results - Smile Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#f8f9ff",
+                        "on-tertiary-fixed-variant": "#6f3800",
+                        "on-secondary-fixed-variant": "#004f4f",
+                        "tertiary-fixed": "#ffdcc4",
+                        "secondary-container": "#6df7f6",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#743b00",
+                        "surface-container": "#e6eeff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#001c37",
+                        "primary-fixed": "#d2e4ff",
+                        "secondary-fixed-dim": "#4adada",
+                        "inverse-surface": "#27313f",
+                        "tertiary": "#532800",
+                        "on-primary-fixed-variant": "#07497d",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c2c7d1",
+                        "surface-tint": "#2d6197",
+                        "surface-dim": "#d0dbed",
+                        "surface-container-high": "#dee9fc",
+                        "secondary": "#006a6a",
+                        "error-container": "#ffdad6",
+                        "outline": "#727780",
+                        "on-primary-container": "#8ebdf9",
+                        "secondary-fixed": "#6df7f6",
+                        "on-surface-variant": "#42474f",
+                        "surface-container-highest": "#d9e3f6",
+                        "primary-fixed-dim": "#a0c9ff",
+                        "tertiary-fixed-dim": "#ffb780",
+                        "on-tertiary-container": "#f9a767",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#a0c9ff",
+                        "on-surface": "#121c2a",
+                        "primary-container": "#0f4c81",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#121c2a",
+                        "on-primary": "#ffffff",
+                        "primary": "#00355f",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-secondary-fixed": "#002020",
+                        "on-tertiary-fixed": "#2f1400",
+                        "surface": "#f8f9ff",
+                        "background": "#f8f9ff",
+                        "on-secondary-container": "#007070",
+                        "surface-variant": "#d9e3f6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "stack-lg": "48px",
+                        "stack-md": "24px",
+                        "gutter": "24px",
+                        "section-gap": "120px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "12px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Poppins"],
+                        "display-lg-mobile": ["Poppins"],
+                        "display-lg": ["Poppins"],
+                        "headline-md": ["Poppins"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .before-after-slider {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+        .slider-handle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: white;
+            cursor: ew-resize;
+            z-index: 10;
+        }
+        .slider-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: white;
+            box-shadow: 0 4px 12px rgba(15, 76, 129, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00355f;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-surface/80 backdrop-blur-md shadow-[0_20px_40px_rgba(15,76,129,0.08)]">
+<nav class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="dentistry">dentistry</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-primary">Lumina Dental</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="treatments.html">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="doctors.html">Doctors</a>
+<a class="font-label-caps text-label-caps text-primary font-bold border-b-2 border-primary pb-1" href="gallery.html">Gallery</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="appointment.html">Contact</a>
+</div>
+<a href="appointment.html" class="bg-primary-container text-white px-6 py-2.5 rounded-full font-label-caps text-label-caps hover:scale-[1.02] active:scale-[0.98] transition-all block text-center shadow-md">
+                Book Now
+            </a>
+</nav>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-stack-lg">
+<div class="text-center max-w-2xl mx-auto space-y-4">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest bg-secondary-container/20 px-4 py-1.5 rounded-full">TRANSFORMATIONS</span>
+<h1 class="font-display-lg text-display-lg md:font-display-lg text-display-lg text-primary">Real Results</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Witness the intersection of modern clinical precision and aesthetic artistry. Discover the smiles we've crafted for our patient community.</p>
+</div>
+</section>
+<!-- Filters Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-stack-lg">
+<div class="flex flex-wrap justify-center gap-3" id="gallery-filters">
+<button class="filter-btn px-8 py-2 rounded-full border border-outline-variant bg-white text-primary font-label-caps text-label-caps transition-all active-filter hover:bg-surface-container-low" data-filter="all" style="border-color: var(--primary);">All Transformations</button>
+<button class="filter-btn px-8 py-2 rounded-full border border-outline-variant bg-white text-on-surface-variant font-label-caps text-label-caps transition-all hover:bg-surface-container-low" data-filter="cosmetic">Cosmetic Dentistry</button>
+<button class="filter-btn px-8 py-2 rounded-full border border-outline-variant bg-white text-on-surface-variant font-label-caps text-label-caps transition-all hover:bg-surface-container-low" data-filter="ortho">Orthodontics</button>
+<button class="filter-btn px-8 py-2 rounded-full border border-outline-variant bg-white text-on-surface-variant font-label-caps text-label-caps transition-all hover:bg-surface-container-low" data-filter="implants">Dental Implants</button>
+</div>
+</section>
+<!-- Gallery Grid -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-gutter" id="gallery-grid">
+<!-- Card 1: Cosmetic -->
+<div class="gallery-item group bg-white rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(15,76,129,0.08)] transition-all hover:shadow-[0_30px_60px_rgba(15,76,129,0.12)]" data-category="cosmetic">
+<div class="before-after-slider" onmousemove="updateSlider(event, this)" ontouchmove="updateSlider(event, this)">
+<!-- Before Image -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A close-up dental photograph showing a patient's teeth before a cosmetic smile makeover. The lighting is clinical and bright, highlighting uneven tooth alignment and natural discoloration against a clean, white background. The shot is detailed, emphasizing the starting point of a professional dental transformation in a modern healthcare environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj6A7oW5o6827HOeHvLHh4n0WgxBGshzSMwmtYsbFOo7XGwGYozFTkyoBWAE9jhxxGYTjoEZ-c0v4zMFBe2nEaluUcWD3N6_iukRCCRH_NRQ3rpUPEQVWEXZsdqgkvTFUeVr-AXhyHp7uRBJQkmHKFOs36CbVubqstnn6_0_n4JF9GwcAobc6MoJ7YBuHc-GBhPsK2eJR_ObrojLRVwSFDASyCXeL8KIiW81Khd4Ns1CYlNcDGgxIxrHPHhhwafCcqQiCj-Cxun-A"/>
+</div>
+<!-- After Image Overlay -->
+<div class="after-overlay absolute inset-0 z-10" style="clip-path: inset(0 50% 0 0);">
+<img class="w-full h-full object-cover" data-alt="A close-up dental photograph showing the same patient's teeth after a comprehensive cosmetic veneer procedure. The teeth are perfectly aligned, bright white, and have a healthy natural luster. The lighting is soft and flattering, reflecting a high-end medical aesthetic. The image captures the successful result of aesthetic dentistry in a minimalist clinic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9-d7WsKmkvrRKb7R3LdqzmbK9p-Z8eDSRlQNgaAP4y3Uqd14izt-MeHsL_qD8fXUf6NgyoFTE13th99yROqoZtwo_8DuSxm5os7svorjDwXTC4w-yLXujCcG_YmjzK1yWihBfeZyhimi0Zjf54IY96xEriaLZogzNDuD0dctIoKhiSY9Ymw2CuQbl6FKYeK2AUjCl4R1sqkeTfbe5O_mpKsny5vBf0o1PQV37PI_k0iQLTTbx_Z6Kn2plk5MxHKMnnHu7kltJq_c"/>
+</div>
+<!-- UI Elements -->
+<div class="slider-handle" style="left: 50%;">
+<div class="slider-circle">
+<span class="material-symbols-outlined text-sm">unfold_more</span>
+</div>
+</div>
+<div class="absolute bottom-4 left-4 z-20 bg-black/40 backdrop-blur-sm text-white px-3 py-1 rounded-full font-label-caps text-[10px]">BEFORE</div>
+<div class="absolute bottom-4 right-4 z-20 bg-primary/80 backdrop-blur-sm text-white px-3 py-1 rounded-full font-label-caps text-[10px]">AFTER</div>
+</div>
+<div class="p-6 space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-primary">Full Porcelain Veneers</h3>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-label-caps">COSMETIC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comprehensive restoration focusing on symmetry and luminosity. Completed in 2 visits.</p>
+</div>
+</div>
+<!-- Card 2: Ortho -->
+<div class="gallery-item group bg-white rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(15,76,129,0.08)] transition-all" data-category="ortho">
+<div class="before-after-slider" onmousemove="updateSlider(event, this)" ontouchmove="updateSlider(event, this)">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Detailed macro photography of dental overcrowding in a patient's mouth prior to orthodontic treatment. The setting is a sterile, well-lit dental studio with a focus on high-fidelity clinical documentation. The palette is dominated by soft whites and clinical blues, creating a professional and trustworthy healthcare atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5pgjtU8wWRc-ASlAiKpoz1fEOI8Ur7zEJdtqL-kX-h1aIaDCxT2o37zejjegHyhwBm4Dfk_CHKxM8IyUz2EMYWB3njDoba5tFZvGqg_xc09AfRKHofvdlx5ZAFXZjLyxg8rRVu5h4xHahRAa8A5XNRJoX_pbGcUGMCiLevkSZN0LkoOpXP3cMJRKTzo3g83aPXL1jm_buzeqa2ef8odaL3rEqpn2YojqVAOOKTXqxI4XDWL8a9OIuGz1yJqR8Y-axc10kXzGkO1k"/>
+</div>
+<div class="after-overlay absolute inset-0 z-10" style="clip-path: inset(0 50% 0 0);">
+<img class="w-full h-full object-cover" data-alt="A high-contrast, clean dental photograph showing perfectly straight teeth after 18 months of clear aligner treatment. The smile is expansive and harmonious, photographed under professional studio lighting that avoids harsh shadows. The overall aesthetic is one of success, cleanliness, and advanced medical technology." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB67dN6JZo1NU1UZh4ZLr8Q0INYKc4SiXF-XBqCllrmUUCHco47rhNNpq2dueAaxUQK92QlEzm61sTzC6RMRToKaL7ckXPeEOHGdyn_t__gMV4y9Kjeb4w2u23JydjXXSvX-69GeiQXAdYUhvbp8d4pYW_dS2KZcxTE7s3OwxATQEt9qvsXkR1WaGBgT2kE0qXK7lcdjPzQidUpUL-Dg95HzDjz9U8tieko71mE8hPzNcw0hRh9Bg9y6Xaa0JZiRWTH2LALHkzuEiU"/>
+</div>
+<div class="slider-handle" style="left: 50%;">
+<div class="slider-circle">
+<span class="material-symbols-outlined text-sm">unfold_more</span>
+</div>
+</div>
+<div class="absolute bottom-4 left-4 z-20 bg-black/40 backdrop-blur-sm text-white px-3 py-1 rounded-full font-label-caps text-[10px]">BEFORE</div>
+<div class="absolute bottom-4 right-4 z-20 bg-primary/80 backdrop-blur-sm text-white px-3 py-1 rounded-full font-label-caps text-[10px]">AFTER</div>
+</div>
+<div class="p-6 space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-primary">Invisalign Journey</h3>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-label-caps">ORTHODONTICS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">14-month alignment correction for severe crowding and bite adjustment.</p>
+</div>
+</div>
+<!-- Card 3: Implants -->
+<div class="gallery-item group bg-white rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(15,76,129,0.08)] transition-all" data-category="implants">
+<div class="before-after-slider" onmousemove="updateSlider(event, this)" ontouchmove="updateSlider(event, this)">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A professional medical photograph showing a gap in a patient's smile caused by a missing molar. The clinical lighting emphasizes the bone structure and healthy gum tissue surrounding the space. The visual style is minimalist and high-end, evoking the feeling of a sophisticated dental diagnostic suite." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5JKqW1IyRxLCWoBlMKD4i5fDBDddxqwbibs1Br07rlaYVQDbOl2s3Qw67GW-RFudY-pcsPZK17rtX59ACatZf3oAgz5F2NWuu1QAYhnmAV9kSMvItoVTPO3LPPEZ2Y8gTxIvj2b8znhaPr1hN2Q8Ro8YVGAtlPnddhT8vNfUi_3baRh6xfmZBLevf9btFfaN-4uVvN7dyCOQFXlbuvoiMtxXM3PMZdpwswPbiqSvlKVfucRoPkCBFljOsjxDLrOIBgRH4dLkgypU"/>
+</div>
+<div class="after-overlay absolute inset-0 z-10" style="clip-path: inset(0 50% 0 0);">
+<img class="w-full h-full object-cover" data-alt="A high-fidelity close-up of a permanent dental implant crown that is indistinguishable from natural teeth. The porcelain reflects light realistically, showing subtle texture and color gradients. The setting is a bright, modern clinic with a focus on sterile perfection and patient success." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjVGf6kC5NDdW3pLUA6Pp11QQEVkIdICR9eU9WTHDk9znnN0DPwXstcbR6iGhjopO-orNvz4EitUJshvQ_gtItGwRl1Nh7VJr6rUVeweaO8NZYXyMJfqGuvyjFW5ntC2Z2dcmYLPPchLWn-hK6N7fUkzBZnfUOT8TCCVVP1--cut4NckTIA_7BS36zBQeCpa-VM1IVb8BhJf45YvvcvfVwpqyVqHiB7BfXTgLjgU-F8F6s25zHdfer-q6gVUZE5S36iRB2uVEVr2w"/>
+</div>
+<div class="slider-handle" style="left: 50%;">
+<div class="slider-circle">
+<span class="material-symbols-outlined text-sm">unfold_more</span>
+</div>
+</div>
+<div class="absolute bottom-4 left-4 z-20 bg-black/40 backdrop-blur-sm text-white px-3 py-1 rounded-full font-label-caps text-[10px]">BEFORE</div>
+<div class="absolute bottom-4 right-4 z-20 bg-primary/80 backdrop-blur-sm text-white px-3 py-1 rounded-full font-label-caps text-[10px]">AFTER</div>
+</div>
+<div class="p-6 space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-primary">Single Tooth Implant</h3>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-label-caps">IMPLANTS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Seamless integration using premium Swiss ceramic crowns and titanium base.</p>
+</div>
+</div>
+<!-- Card 4: Cosmetic -->
+<div class="gallery-item group bg-white rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(15,76,129,0.08)] transition-all" data-category="cosmetic">
+<div class="before-after-slider" onmousemove="updateSlider(event, this)" ontouchmove="updateSlider(event, this)">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Clinical close-up of teeth showing coffee and tobacco staining before a professional whitening treatment. The lighting is neutral and even, documenting the initial state of the teeth in a clean, minimalist medical environment. The palette is cool and sterile, emphasizing the clinical nature of the procedure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw0bCrwLtRhIty2wqLU9-nuYt9LB7WuxX_U2fA3-r8d7iF5I_18ciWJS06XrVGwxhUorF5tW5qhev1qdkv15NdrtV2WawkncaWmxAS-uk67Pf-05i7d-AzAU3rE51KobqmCNNrRaOUh-3xpF-wOoAjNV8mDi4krxyJ_JkvrW4YmULIb1f8KbkPfyoaENuFjwfqj84s4LC0hh1929qC3Gl8hjTa1EYuQZEIlOWs5vLWY_ukBZ0KmxVNjGJay4ABvBM1kp92CRQafq4"/>
+</div>
+<div class="after-overlay absolute inset-0 z-10" style="clip-path: inset(0 50% 0 0);">
+<img class="w-full h-full object-cover" data-alt="The same smile after a professional in-office laser whitening session. The teeth are significantly brighter, radiating a healthy, natural white glow. The lighting is soft and sophisticated, creating a premium light-mode aesthetic that communicates confidence and cleanliness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNvAgsjBZ6PXMjqsd_2PL1vLAeKqUVzwp_xaySTDSEOgq_uHKZ2kB_GIQ0h26X8cFTmeya0ahx4FNHSPJenLXauMQupQva2Gi7aizQfgYZNcHjsYLB6j-oJqAkKfY8c2Xya1k05JzX1jPNr9nPya84Q_sm2fSs_ovMPnyIqsGheHOmYrOH64Y-teCdiiS9c0BA5po_ckKUL72D8H9KqwjiciLpxAxjTFsWTOEpmQwxmlGQXZH_-Jw4N-ueNgDd8iYUIm8QU7ItSUQ"/>
+</div>
+<div class="slider-handle" style="left: 50%;">
+<div class="slider-circle">
+<span class="material-symbols-outlined text-sm">unfold_more</span>
+</div>
+</div>
+<div class="absolute bottom-4 left-4 z-20 bg-black/40 backdrop-blur-sm text-white px-3 py-1 rounded-full font-label-caps text-[10px]">BEFORE</div>
+<div class="absolute bottom-4 right-4 z-20 bg-primary/80 backdrop-blur-sm text-white px-3 py-1 rounded-full font-label-caps text-[10px]">AFTER</div>
+</div>
+<div class="p-6 space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-sm text-headline-sm text-primary">Laser Whitening</h3>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-label-caps">COSMETIC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">8 shades brighter in a single 60-minute session using Lumina Laser Tech.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="bg-primary py-section-gap overflow-hidden relative">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(109,247,246,0.3),transparent_70%)]"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10">
+<div class="space-y-4 text-center md:text-left">
+<h2 class="font-headline-md text-headline-md text-white">Your smile is our next masterpiece.</h2>
+<p class="font-body-lg text-body-lg text-white/80 max-w-lg">Ready to start your own transformation? Consult with our experts for a personalized treatment plan.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="appointment.html" class="bg-white text-primary px-10 py-4 rounded-full font-label-caps text-label-caps hover:scale-[1.05] transition-transform inline-block text-center shadow-lg">Book a Consultation</a>
+<a href="treatments.html" class="border border-white/30 text-white px-10 py-4 rounded-full font-label-caps text-label-caps hover:bg-white/10 transition-colors inline-block text-center">View Pricing</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-stack-lg pb-stack-lg bg-surface-bright dark:bg-surface-dim border-t border-outline-variant/30">
+<div class="flex flex-col gap-stack-md px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="dentistry">dentistry</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">Lumina Dental</span>
+</div>
+<p class="max-w-xs text-on-surface-variant font-body-sm text-body-sm">Pioneering dental excellence with cutting-edge technology and patient-centric care.</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-8">
+<div class="space-y-3">
+<span class="font-label-caps text-label-caps text-primary">SERVICES</span>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="treatments.html">General</a></li>
+<li><a class="hover:text-primary transition-colors" href="treatments.html">Cosmetic</a></li>
+<li><a class="hover:text-primary transition-colors" href="treatments.html">Surgery</a></li>
+</ul>
+</div>
+<div class="space-y-3">
+<span class="font-label-caps text-label-caps text-primary">PATIENTS</span>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="appointment.html">Portal</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Financing</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Reviews</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between pt-8 border-t border-outline-variant/20 gap-4">
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Lumina Dental Clinic. Excellence in Care.</p>
+<div class="flex gap-6">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Google Maps</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-2 px-margin-mobile bg-white dark:bg-surface rounded-t-xl shadow-[0_-10px_30px_rgba(15,76,129,0.05)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline opacity-60" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-caps text-label-caps text-[10px]">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline opacity-60" href="treatments.html">
+<span class="material-symbols-outlined">medical_services</span>
+<span class="font-label-caps text-label-caps text-[10px]">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed font-bold" href="gallery.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">photo_library</span>
+<span class="font-label-caps text-label-caps text-[10px]">Gallery</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline opacity-60" href="appointment.html">
+<span class="material-symbols-outlined">contact_support</span>
+<span class="font-label-caps text-label-caps text-[10px]">Contact</span>
+</a>
+</nav>
+<script>
+        function updateSlider(e, container) {
+            const rect = container.getBoundingClientRect();
+            let x = 0;
+            
+            if (e.type === 'touchmove') {
+                x = e.touches[0].clientX - rect.left;
+            } else {
+                x = e.clientX - rect.left;
+            }
+            
+            const position = (x / rect.width) * 100;
+            const clamped = Math.min(Math.max(position, 0), 100);
+            
+            const overlay = container.querySelector('.after-overlay');
+            const handle = container.querySelector('.slider-handle');
+            
+            overlay.style.clipPath = `inset(0 0 0 ${clamped}%)`;
+            handle.style.left = `${clamped}%`;
+        }
+
+        // Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // UI Toggle
+                filterBtns.forEach(b => {
+                    b.classList.remove('text-primary', 'font-bold');
+                    b.style.borderColor = '#c2c7d1';
+                });
+                btn.classList.add('text-primary', 'font-bold');
+                btn.style.borderColor = '#00355f';
+
+                const filter = btn.getAttribute('data-filter');
+
+                items.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => item.style.opacity = '1', 50);
+                    } else {
+                        item.style.opacity = '0';
+                        setTimeout(() => item.style.display = 'none', 300);
+                    }
+                });
+            });
+        });
+
+        // Micro-interaction for handle circle
+        document.querySelectorAll('.before-after-slider').forEach(slider => {
+            slider.addEventListener('mouseenter', () => {
+                slider.querySelector('.slider-circle').style.transform = 'translate(-50%, -50%) scale(1.15)';
+            });
+            slider.addEventListener('mouseleave', () => {
+                slider.querySelector('.slider-circle').style.transform = 'translate(-50%, -50%) scale(1)';
+            });
+        });
+    </script>
+</body></html>

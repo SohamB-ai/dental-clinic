@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lumina Dental | Experience Dental Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#f8f9ff",
+                    "on-tertiary-fixed-variant": "#6f3800",
+                    "on-secondary-fixed-variant": "#004f4f",
+                    "tertiary-fixed": "#ffdcc4",
+                    "secondary-container": "#6df7f6",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#743b00",
+                    "surface-container": "#e6eeff",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#001c37",
+                    "primary-fixed": "#d2e4ff",
+                    "secondary-fixed-dim": "#4adada",
+                    "inverse-surface": "#27313f",
+                    "tertiary": "#532800",
+                    "on-primary-fixed-variant": "#07497d",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#c2c7d1",
+                    "surface-tint": "#2d6197",
+                    "surface-dim": "#d0dbed",
+                    "surface-container-high": "#dee9fc",
+                    "secondary": "#006a6a",
+                    "error-container": "#ffdad6",
+                    "outline": "#727780",
+                    "on-primary-container": "#8ebdf9",
+                    "secondary-fixed": "#6df7f6",
+                    "on-surface-variant": "#42474f",
+                    "surface-container-highest": "#d9e3f6",
+                    "primary-fixed-dim": "#a0c9ff",
+                    "tertiary-fixed-dim": "#ffb780",
+                    "on-tertiary-container": "#f9a767",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#a0c9ff",
+                    "on-surface": "#121c2a",
+                    "primary-container": "#0f4c81",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#eff4ff",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#121c2a",
+                    "on-primary": "#ffffff",
+                    "primary": "#00355f",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-secondary-fixed": "#002020",
+                    "on-tertiary-fixed": "#2f1400",
+                    "surface": "#f8f9ff",
+                    "background": "#f8f9ff",
+                    "on-secondary-container": "#007070",
+                    "surface-variant": "#d9e3f6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "stack-lg": "48px",
+                    "stack-md": "24px",
+                    "gutter": "24px",
+                    "section-gap": "120px",
+                    "container-max": "1280px",
+                    "margin-mobile": "20px",
+                    "stack-sm": "12px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Poppins"],
+                    "display-lg-mobile": ["Poppins"],
+                    "display-lg": ["Poppins"],
+                    "headline-md": ["Poppins"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "label-caps": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .trust-badge-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-white text-on-surface font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-[0_20px_40px_rgba(15,76,129,0.08)]">
+<nav class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">dentistry</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-primary">Lumina Dental</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold transition-all hover:scale-[1.02]" href="index.html">Home</a>
+<a class="text-on-surface-variant transition-all hover:text-primary hover:scale-[1.02]" href="treatments.html">Services</a>
+<a class="text-on-surface-variant transition-all hover:text-primary hover:scale-[1.02]" href="doctors.html">Doctors</a>
+<a class="text-on-surface-variant transition-all hover:text-primary hover:scale-[1.02]" href="gallery.html">Gallery</a>
+<a class="text-on-surface-variant transition-all hover:text-primary hover:scale-[1.02]" href="appointment.html">Contact</a>
+</div>
+<a href="appointment.html" class="bg-primary-container text-white px-6 py-2.5 rounded-full font-semibold hover:scale-[1.02] active:scale-[0.98] transition-all block text-center">
+                Book Now
+            </a>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[751px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A high-end, minimalist dental clinic interior with soft natural lighting streaming through large windows. The space features clean white architectural lines, premium ergonomic equipment in a muted teal palette, and a sense of clinical serenity. The photography style is bright and airy, emphasizing a high-tech yet welcoming atmosphere with extreme clarity and a professional medical aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrpsN6PFVg54IM1f7ZrQb59Wj9lzJrtPu32BFQfKlLWuVLPWyGj7fXNLCDombq3yeoVbfMZ3aoowuHLr3eVB0D-yHozJwLuKzyhF9ZDqK70J9yI6XgzEyS2a1QzF16USJICl_Bb6Ww6XqqnN5n58LleOShKl6ZCrtjz6lWDT-4cOYeKaqF8Ba0-M2F6jnDgxhUGYKNWP68SCQKWM1C8w5ywNnWLJrVz0E73wvFwSBczhd7cnZzcFwz6EahjdJnCTP_qk_9jbERB3U"/>
+<div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
+<div class="max-w-2xl space-y-stack-md">
+<div class="inline-flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full text-primary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        ESTABLISHED 2024
+                    </div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight">
+                        Experience <br/> Dental Excellence
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Modern care with a minimalistic touch. Our clinic combines advanced technology with a serene environment to redefine your dental journey.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a href="appointment.html" class="bg-primary-container text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all inline-block text-center">
+                            Book Your Visit
+                        </a>
+<a href="treatments.html" class="bg-white border border-outline-variant text-primary px-8 py-4 rounded-xl font-semibold hover:bg-surface-container-low transition-all inline-block text-center">
+                            Explore Services
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Badges -->
+<section class="bg-white py-12 border-y border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center">
+<div class="flex items-center gap-4 trust-badge-float" style="animation-delay: 0s;">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">award_star</span>
+</div>
+<div>
+<p class="font-bold text-primary">Top Rated 2024</p>
+<p class="text-body-sm text-on-surface-variant">Clinical Excellence</p>
+</div>
+</div>
+<div class="flex items-center gap-4 trust-badge-float" style="animation-delay: 0.5s;">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<div>
+<p class="font-bold text-primary">Certified Specialist</p>
+<p class="text-body-sm text-on-surface-variant">Expert Care</p>
+</div>
+</div>
+<div class="flex items-center gap-4 trust-badge-float" style="animation-delay: 1s;">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div>
+<p class="font-bold text-primary">5.0 Google Rating</p>
+<p class="text-body-sm text-on-surface-variant">Trusted by 2k+ Patients</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-section-gap bg-surface-bright">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+<h2 class="font-headline-md text-headline-md text-primary">Precision Care for Every Smile</h2>
+<p class="font-body-md text-on-surface-variant">We provide a comprehensive range of dental services using the latest digital dentistry techniques for painless and precise results.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- General -->
+<div class="bg-white p-10 rounded-2xl shadow-[0_20px_40px_rgba(15,76,129,0.05)] group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-low text-primary flex items-center justify-center mb-8 group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">medical_services</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">General</h3>
+<p class="text-on-surface-variant mb-6">Routine checkups, cleanings, and preventative care designed to maintain long-term oral health for the whole family.</p>
+<a class="text-primary font-semibold flex items-center gap-2 group-hover:gap-3 transition-all" href="treatments.html">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Cosmetic -->
+<div class="bg-white p-10 rounded-2xl shadow-[0_20px_40px_rgba(15,76,129,0.05)] group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-low text-primary flex items-center justify-center mb-8 group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">auto_fix_high</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Cosmetic</h3>
+<p class="text-on-surface-variant mb-6">Transform your smile with porcelain veneers, professional whitening, and aesthetic bonding for a natural, confident look.</p>
+<a class="text-primary font-semibold flex items-center gap-2 group-hover:gap-3 transition-all" href="treatments.html">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Orthodontics -->
+<div class="bg-white p-10 rounded-2xl shadow-[0_20px_40px_rgba(15,76,129,0.05)] group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-low text-primary flex items-center justify-center mb-8 group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">meet</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Orthodontics</h3>
+<p class="text-on-surface-variant mb-6">Discreet alignment solutions including Invisalign and ceramic braces tailored to your unique facial structure.</p>
+<a class="text-primary font-semibold flex items-center gap-2 group-hover:gap-3 transition-all" href="treatments.html">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet the Team -->
+<section class="py-section-gap overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Led by Specialists</h2>
+<p class="text-on-surface-variant">Our team of board-certified dentists brings over 40 years of combined experience to every procedure.</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex gap-gutter overflow-x-auto pb-8 snap-x no-scrollbar">
+<div class="min-w-[300px] snap-start">
+<div class="h-[400px] rounded-2xl overflow-hidden mb-6 relative group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional studio portrait of a friendly female dentist in her early 40s wearing white clinical attire. She has a warm, confident expression and short dark hair. The background is a soft, out-of-focus medical setting with professional high-key lighting, maintaining the clean, minimalist Lumina Dental aesthetic with hints of premium blue in the shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjauwNiQHFIZrO9xJb76oGRr6OM1xnnk3SepPIyJzCdvILq3Hb9kCHXy1ONDwJtsBqXx-GlUyIAF6p7G4X0aosSXTYHs-0Tt9Uccpttlb4DewZlo3kPKLIzZjUqa5qAxFnkdxg0wY0tkEbNiZ-hwMM5tiVc5bTb74BvhYQep6_R97mhVIyLvzZqLMH7cKSudaVqFzLT0H7G0kLWpGaV4eijPy-7cdJr3R5Ge2PI3AvNOZy6jieKgNKNQnaJeThkwN8DV6AArEOCAA"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Dr. Elena Vance</h4>
+<p class="text-on-surface-variant font-label-caps text-label-caps">CLINICAL DIRECTOR</p>
+</div>
+<div class="min-w-[300px] snap-start">
+<div class="h-[400px] rounded-2xl overflow-hidden mb-6 relative group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a senior male orthodontist with a kind, reassuring smile. He is wearing a modern teal medical uniform. The lighting is sophisticated and bright, characteristic of high-end corporate healthcare photography. The color palette is restricted to whites, soft blues, and natural skin tones for a sterile yet approachable feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFg_MaAZZLIDJwP-GgAr5amV-FULQWlvmn-zcCUHZ-rRO0vEY7-V3jk4HnRmn_hIL0ZgJX-JgN70SNHhViHrcaSakLFGfDLWm0NabPDu9jV1r7PqrJjDeUAN5g5L6KQWdUCnKv7xdAKBO2vuw_NM3GTF5Ve6uKWzlBNvcNXfbuSNDC9b00YZbopHz3ZaZcNbkF2O9If2cTbHpdjowdOEcLqBSYlquQTznvaAmz_0ov3Dpxk0zpMS5eRC2oZP9tGecWYKRwo6FtKT4"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Dr. Marcus Thorne</h4>
+<p class="text-on-surface-variant font-label-caps text-label-caps">ORAL SURGEON</p>
+</div>
+<div class="min-w-[300px] snap-start">
+<div class="h-[400px] rounded-2xl overflow-hidden mb-6 relative group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A medium shot of a young, professional female dental specialist. She is adjusting her glasses with a gentle smile, looking towards the camera. The setting is a bright, airy medical office with minimalist decor. The photography is crisp and clean, reflecting the premium clinical excellence of the Lumina Dental brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApO57ukLrzGCHe8vvGnxjfp6Btxwptbd8RwsaKJYEqSJLqmhfp269YHnnd35L8DFQPJe4xSys-8LjCt10Z0uQJvCKsMuif_WDiGnC27QbAGwXiB10vWRsgHZAZLqH0kokFeqvjWhM3yPk_8lzbaBeIGvH1qEbxW5DGMAWk3yxRAlqkytNU4fmGtjT4kP5DbbAn_fP1UHY3QNHddniQvyKCov6GigayzjylH5JAakHllDG56cU1gKJfd4wN8SvEMR4iidlBfBdXa8c"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Dr. Sarah Chen</h4>
+<p class="text-on-surface-variant font-label-caps text-label-caps">COSMETIC DENTIST</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews / Single Testimonial -->
+<section class="py-section-gap bg-primary text-white">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<div class="mb-12">
+<span class="material-symbols-outlined text-6xl opacity-20" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+</div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg max-w-4xl mx-auto mb-12">
+                    "The most frictionless dental experience I've ever had. Truly professional care in a space that feels more like a spa than a clinic."
+                </h2>
+<div class="flex items-center justify-center gap-4">
+<div class="w-16 h-16 rounded-full border-2 border-white/20 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Headshot of a happy, well-groomed male professional in his 30s with a confident smile. He is standing outdoors with soft morning light illuminating his face. The photo has a high-quality, authentic feel, representing a satisfied patient of the Lumina Dental clinic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADBhef2FXCctZpHlYgX9fIpr2X3JLeKGaK8vTbnfrNWT0LqCFWqltWWoLyCXgR-DkfkB-2EpwYkm8VyGNB8GOlkKoTO0-3amkVGr1iM1VSV_c87nEDkZP-YNHUPLujEkvPEr6lQMTgqlu4Z9UQ1ENCv6Nkdh8fnXbRc_5Y-H5wUfJkKu0tHevZkoM-uu1g1uy-pD__4KuB95z3FuMuSFWJexmBXZkJMc9NBGBuZWRR30shWuqRiEFqXf-72CCICs1u0Y-GXik6qUA"/>
+</div>
+<div class="text-left">
+<p class="font-bold text-lg">Jonathan Wright</p>
+<p class="text-primary-container font-label-caps text-label-caps">PATIENT SINCE 2023</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section (Final) -->
+<section class="py-section-gap bg-white">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-surface-container-low rounded-3xl p-12 md:p-24 flex flex-col items-center text-center">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">Ready for a Better Smile?</h2>
+<p class="font-body-lg text-on-surface-variant max-w-xl mb-12">Join over 2,000 satisfied patients who have found their forever dental home at Lumina. Book your consultation today.</p>
+<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+<a href="appointment.html" class="bg-primary text-white px-10 py-5 rounded-xl font-bold shadow-xl hover:scale-[1.02] transition-transform inline-block text-center">
+                            Book Appointment Now
+                        </a>
+</div>
+<div class="mt-8 flex items-center gap-8 opacity-60">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="font-label-caps text-label-caps">OPEN MON-SAT</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="font-label-caps text-label-caps">DOWNTOWN CLINIC</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-stack-lg pb-stack-lg bg-surface-bright border-t border-outline-variant/30">
+<div class="flex flex-col gap-stack-md px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">dentistry</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">Lumina Dental</span>
+</div>
+<p class="max-w-xs text-on-surface-variant font-body-sm text-body-sm">
+                        Excellence in clinical care meets modern aesthetics. Providing premium dental services since 2024.
+                    </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="space-y-4">
+<h5 class="font-bold text-primary">Links</h5>
+<ul class="space-y-2 text-on-surface-variant font-body-sm text-body-sm">
+<li><a class="hover:text-secondary transition-colors cursor-pointer" href="#">Patient Portal</a></li>
+<li><a class="hover:text-secondary transition-colors cursor-pointer" href="#">Google Maps</a></li>
+<li><a class="hover:text-secondary transition-colors cursor-pointer" href="appointment.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-bold text-primary">Services</h5>
+<ul class="space-y-2 text-on-surface-variant font-body-sm text-body-sm">
+<li><a class="hover:text-secondary transition-colors cursor-pointer" href="treatments.html">Teeth Whitening</a></li>
+<li><a class="hover:text-secondary transition-colors cursor-pointer" href="treatments.html">Implantology</a></li>
+<li><a class="hover:text-secondary transition-colors cursor-pointer" href="treatments.html">Pediatric Care</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-outline-variant/20 gap-4">
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Lumina Dental Clinic. Excellence in Care.</p>
+<div class="flex gap-6 font-body-sm text-body-sm text-on-surface-variant">
+<a class="hover:text-primary hover:border-b hover:border-primary transition-all" href="#">Privacy Policy</a>
+<a class="hover:text-primary hover:border-b hover:border-primary transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile only) -->
+<div class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-3 px-margin-mobile bg-white border-t border-outline-variant/10 rounded-t-xl shadow-[0_-10px_30px_rgba(15,76,129,0.05)]">
+<a class="flex flex-col items-center justify-center text-primary font-bold transition-transform active:scale-95" href="index.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-caps text-label-caps">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 transition-transform active:scale-95" href="treatments.html">
+<span class="material-symbols-outlined">medical_services</span>
+<span class="font-label-caps text-label-caps">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 transition-transform active:scale-95" href="gallery.html">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="font-label-caps text-label-caps">Gallery</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 transition-transform active:scale-95" href="appointment.html">
+<span class="material-symbols-outlined">contact_support</span>
+<span class="font-label-caps text-label-caps">Contact</span>
+</a>
+</div>
+<!-- Sticky FAB -->
+<div class="fixed bottom-24 right-6 z-40 hidden md:block">
+<a href="appointment.html" class="bg-primary-container text-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 hover:scale-110 active:scale-95 transition-all group inline-flex">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="font-bold whitespace-nowrap overflow-hidden w-0 group-hover:w-32 transition-all duration-300">Book Appointment</span>
+</a>
+</div>
+<script>
+        // Micro-interactions and scroll effects
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('h-20');
+                header.classList.add('h-16');
+            } else {
+                header.classList.remove('py-2');
+                header.classList.add('h-20');
+                header.classList.remove('h-16');
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

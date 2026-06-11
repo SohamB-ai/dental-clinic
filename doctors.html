@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Meet the Doctors | Lumina Dental</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#f8f9ff",
+                    "on-tertiary-fixed-variant": "#6f3800",
+                    "on-secondary-fixed-variant": "#004f4f",
+                    "tertiary-fixed": "#ffdcc4",
+                    "secondary-container": "#6df7f6",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#743b00",
+                    "surface-container": "#e6eeff",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#001c37",
+                    "primary-fixed": "#d2e4ff",
+                    "secondary-fixed-dim": "#4adada",
+                    "inverse-surface": "#27313f",
+                    "tertiary": "#532800",
+                    "on-primary-fixed-variant": "#07497d",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#c2c7d1",
+                    "surface-tint": "#2d6197",
+                    "surface-dim": "#d0dbed",
+                    "surface-container-high": "#dee9fc",
+                    "secondary": "#006a6a",
+                    "error-container": "#ffdad6",
+                    "outline": "#727780",
+                    "on-primary-container": "#8ebdf9",
+                    "secondary-fixed": "#6df7f6",
+                    "on-surface-variant": "#42474f",
+                    "surface-container-highest": "#d9e3f6",
+                    "primary-fixed-dim": "#a0c9ff",
+                    "tertiary-fixed-dim": "#ffb780",
+                    "on-tertiary-container": "#f9a767",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#a0c9ff",
+                    "on-surface": "#121c2a",
+                    "primary-container": "#0f4c81",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#eff4ff",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#121c2a",
+                    "on-primary": "#ffffff",
+                    "primary": "#00355f",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-secondary-fixed": "#002020",
+                    "on-tertiary-fixed": "#2f1400",
+                    "surface": "#f8f9ff",
+                    "background": "#f8f9ff",
+                    "on-secondary-container": "#007070",
+                    "surface-variant": "#d9e3f6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "stack-lg": "48px",
+                    "stack-md": "24px",
+                    "gutter": "24px",
+                    "section-gap": "120px",
+                    "container-max": "1280px",
+                    "margin-mobile": "20px",
+                    "stack-sm": "12px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Poppins"],
+                    "display-lg-mobile": ["Poppins"],
+                    "display-lg": ["Poppins"],
+                    "headline-md": ["Poppins"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "label-caps": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(232, 250, 248, 1) 0%, rgba(248, 249, 255, 1) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-surface/80 backdrop-blur-md shadow-[0_20px_40px_rgba(15,76,129,0.08)]">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="dentistry">dentistry</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-primary">Lumina Dental</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-outline font-label-caps text-label-caps hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-on-surface-variant dark:text-outline font-label-caps text-label-caps hover:text-primary transition-colors" href="treatments.html">Services</a>
+<a class="text-primary dark:text-primary-fixed font-bold font-label-caps text-label-caps border-b-2 border-primary pb-1" href="doctors.html">Doctors</a>
+<a class="text-on-surface-variant dark:text-outline font-label-caps text-label-caps hover:text-primary transition-colors" href="gallery.html">Gallery</a>
+<a class="text-on-surface-variant dark:text-outline font-label-caps text-label-caps hover:text-primary transition-colors" href="appointment.html">Contact</a>
+</nav>
+<a href="appointment.html" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-caps text-label-caps hover:scale-[1.02] transition-transform duration-200 active:scale-[0.98] inline-block text-center shadow-md">
+                Book Now
+            </a>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="hero-gradient py-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto text-center">
+<span class="text-secondary font-label-caps text-label-caps tracking-widest block mb-4">EXCELLENCE IN CARE</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">Your Smile Architects</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Meet the visionaries behind Lumina Dental. Our specialists combine decades of clinical expertise with an artistic eye for aesthetics.
+                </p>
+</div>
+</section>
+<!-- Doctor Profiles -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-white">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Dr. Sarah Mitchell -->
+<div class="group relative bg-surface-container-low rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(15,76,129,0.05)] transition-all duration-500 hover:-translate-y-2">
+<div class="flex flex-col md:flex-row h-full">
+<div class="w-full md:w-1/2 aspect-[4/5] relative overflow-hidden">
+<img alt="Dr. Sarah Mitchell" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A professional portrait of a female dentist, Dr. Sarah Mitchell, in a high-end modern dental clinic. She is smiling warmly, wearing a crisp white medical coat with a subtle Lumina Dental logo. The background features soft-focus medical equipment and large windows with natural morning light. The color palette is dominated by clean whites, soft teals, and a professional blue, conveying trust and sophisticated expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQmGIHvzvLWcEDfXglE74XPp5hMtKsoX9yUw8BKPjECBlZ9Nrut6eAB9nQlte2vd7k6iamM1PPNdOxCXdbkubEM2g8n8N29hCZoKuEd1ceCEprn8QWreoYG6zJIIQku1KgCQ2Fcu8BS7dWVquabZ8STjRAdCnVNfATK_cYO-zRQgMMUu2CupKmpYHkbA2Yc456PYfBDGMa4YyUcjUzPzYPxyGliqG1pAvViQXRP4watTB2EeLKmzFX-Bi05hGirBiL980_BBvVvZE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+</div>
+<div class="w-full md:w-1/2 p-stack-md flex flex-col justify-between">
+<div>
+<span class="inline-block bg-secondary-container text-on-secondary-container font-label-caps text-label-caps px-3 py-1 rounded-full mb-4">Cosmetic Specialist</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Dr. Sarah Mitchell</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+                                        Specializing in transformative aesthetic dentistry, Dr. Mitchell blends clinical precision with an artistic vision to create natural, vibrant smiles that reflect her patients' true selves.
+                                    </p>
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="school">school</span>
+<span class="font-body-sm text-body-sm font-medium">Harvard School of Dental Medicine</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
+<span class="font-body-sm text-body-sm font-medium">15+ Years Clinical Experience</span>
+</div>
+</div>
+</div>
+<a href="appointment.html" class="mt-8 flex items-center justify-center gap-2 bg-primary text-white font-label-caps text-label-caps px-6 py-3 rounded-lg hover:scale-[1.02] active:scale-[0.98] transition-all group/btn inline-flex">
+                                    Book Consult
+                                    <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Dr. James Wilson -->
+<div class="group relative bg-surface-container-low rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(15,76,129,0.05)] transition-all duration-500 hover:-translate-y-2">
+<div class="flex flex-col md:flex-row h-full">
+<div class="w-full md:w-1/2 aspect-[4/5] relative overflow-hidden">
+<img alt="Dr. James Wilson" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A distinguished male orthodontist, Dr. James Wilson, standing in a brightly lit, minimalist dental office. He has a friendly and authoritative expression, wearing professional attire under a blue surgical vest. In the background, modern orthodontic technology is visible against a pristine white wall. The image uses high-key lighting and a palette of professional blues and cool grays to reflect a sterile yet approachable healthcare environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCamVQNBBblIsc4o2-H5TYSTuleT-lqIRCEQOvsbtg-TRllJuTD6N1NW6xZkQ66u9GEj-nrgQ1cbnH2UUFSa9oIeFUfoPo0Qhf8euDsTAFL1alTkXDbzQ1UO29TVLrxy6AyY1SrAadwbSX2ctRJuM5r2qWrmEOGnQVJK0PWWBJtLONWMVwxcvxKxxhg8VK6upPchkJKXR292Lsct_7ZqA7e9jbVME4w9b7MPjmXDOwpQddPkvPfQcTpGvnXKXWZtoqSQAv0joSyEQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+</div>
+<div class="w-full md:w-1/2 p-stack-md flex flex-col justify-between">
+<div>
+<span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps px-3 py-1 rounded-full mb-4">Orthodontist</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Dr. James Wilson</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+                                        As a leader in digital orthodontics, Dr. Wilson focuses on precision alignment using state-of-the-art clear aligner therapy and minimally invasive techniques.
+                                    </p>
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="school">school</span>
+<span class="font-body-sm text-body-sm font-medium">UPenn School of Dental Medicine</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="clinical_notes">clinical_notes</span>
+<span class="font-body-sm text-body-sm font-medium">Board Certified Orthodontist</span>
+</div>
+</div>
+</div>
+<a href="appointment.html" class="mt-8 flex items-center justify-center gap-2 bg-primary text-white font-label-caps text-label-caps px-6 py-3 rounded-lg hover:scale-[1.02] active:scale-[0.98] transition-all group/btn inline-flex">
+                                    Book Consult
+                                    <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy Bento Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-bright">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 bg-primary-container p-12 rounded-3xl text-white relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md mb-4 text-on-primary-container">Our Collective Philosophy</h3>
+<p class="font-body-lg text-body-lg opacity-90 max-w-xl">
+                                We believe dentistry is the perfect intersection of medicine, technology, and art. Our doctors collaborate on every complex case to ensure multifaceted clinical success.
+                            </p>
+</div>
+<div class="absolute -right-20 -bottom-20 w-64 h-64 bg-secondary/20 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-700"></div>
+</div>
+<div class="bg-white p-12 rounded-3xl shadow-[0_20px_40px_rgba(15,76,129,0.05)] flex flex-col justify-center text-center">
+<span class="font-display-lg text-display-lg-mobile text-secondary block">25+</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Combined Years Excellence</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-stack-lg pb-stack-lg bg-surface-bright dark:bg-surface-dim border-t border-outline-variant/30">
+<div class="flex flex-col gap-stack-md px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="dentistry">dentistry</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">Lumina Dental</span>
+</div>
+<div class="flex flex-wrap gap-6">
+<a class="text-on-surface-variant dark:text-outline font-body-sm text-body-sm hover:text-secondary transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-outline font-body-sm text-body-sm hover:text-secondary transition-colors cursor-pointer" href="#">Terms of Service</a>
+<a class="text-on-surface-variant dark:text-outline font-body-sm text-body-sm hover:text-secondary transition-colors cursor-pointer" href="appointment.html">Patient Portal</a>
+<a class="text-on-surface-variant dark:text-outline font-body-sm text-body-sm hover:text-secondary transition-colors cursor-pointer" href="#">Google Maps</a>
+</div>
+</div>
+<p class="text-on-surface-variant dark:text-outline font-body-sm text-body-sm text-center md:text-left">
+                © 2024 Lumina Dental Clinic. Excellence in Care.
+            </p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-2 px-margin-mobile bg-white dark:bg-surface shadow-[0_-10px_30px_rgba(15,76,129,0.05)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline opacity-60 font-label-caps text-label-caps" href="index.html">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span>Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline opacity-60 font-label-caps text-label-caps" href="treatments.html">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+<span>Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline opacity-60 font-label-caps text-label-caps" href="gallery.html">
+<span class="material-symbols-outlined" data-icon="photo_library">photo_library</span>
+<span>Gallery</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline opacity-60 font-label-caps text-label-caps" href="appointment.html">
+<span class="material-symbols-outlined" data-icon="contact_support">contact_support</span>
+<span>Contact</span>
+</a>
+</nav>
+<!-- Sticky Whatsapp FAB -->
+<div class="fixed bottom-24 right-6 z-40 flex items-center justify-center">
+<a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all w-14 h-14" title="Chat on WhatsApp">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-7 h-7 fill-current"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+</a>
+</div>
+<script>
+        // Simple Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.group').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>
